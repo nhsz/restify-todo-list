@@ -4,7 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon"
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">= 8.0.0"
   },
   "keywords": [],
   "author": "Nicolás Quiroz <nh.quiroz@gmail.com> (nicolasquiroz.com)",
@@ -17,8 +20,5 @@
     "restify-errors": "^5.0.0",
     "restify-plugins": "^1.6.0",
     "shortid": "^2.2.8"
-  },
-  "devDependencies": {
-    "nodemon": "^1.11.0"
   }
 }
