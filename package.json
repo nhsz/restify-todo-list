@@ -1,0 +1,24 @@
+{
+  "name": "restify-todo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "keywords": [],
+  "author": "Nicolás Quiroz <nh.quiroz@gmail.com> (nicolasquiroz.com)",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^4.11.7",
+    "mongoose-string-query": "^0.2.5",
+    "mongoose-timestamp": "^0.6.0",
+    "restify": "^5.2.0",
+    "restify-errors": "^5.0.0",
+    "restify-plugins": "^1.6.0",
+    "shortid": "^2.2.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
