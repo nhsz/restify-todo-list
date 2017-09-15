@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const restifyPlugins = require('restify-plugins')
 
 const server = restify.createServer({
+  url: config.BASE_URL,
   name: config.NAME
 })
 
@@ -28,5 +29,3 @@ server.listen(config.PORT, () => {
     console.log(`Server is listening on port ${config.PORT}...`)
   })
 })
-
-module.exports = server
