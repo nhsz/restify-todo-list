@@ -6,7 +6,7 @@ module.exports = (server) => {
     Method: POST
     Endpoint: /v1/todo/
     Usage: Create a new task
-    Returns: new task
+    Returns: New task
   */
   server.post('/v1/todo', (req, res, next) => {
     if (!req.is('application/json')) {
@@ -55,7 +55,7 @@ module.exports = (server) => {
     Method: GET
     Endpoint: /v1/todo/{id}
     Usage: Get a specific task
-    Returns: task
+    Returns: Task
   */
   server.get('/v1/todo/:id', (req, res, next) => {
     Todo.findOne({ _id: req.params.id }, (err, task) => {
@@ -75,7 +75,7 @@ module.exports = (server) => {
     Method: PUT
     Endpoint: /v1/todo/{id}
     Usage: Update a specific task
-    Returns: task
+    Returns: Task
   */
   server.put('/v1/todo/:id', (req, res, next) => {
     if (!req.is('application/json')) {
@@ -122,7 +122,7 @@ module.exports = (server) => {
     Method: DELETE
     Endpoint: /v1/todo/{id}
     Usage: Destroy a specific task
-    Returns: task
+    Returns: Task
   */
   server.del('/v1/todo/:id', (req, res, next) => {
     Todo.remove({ _id: req.params.id }, (err) => {
